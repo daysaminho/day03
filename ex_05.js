@@ -1,15 +1,16 @@
-function fillBus(peopleAtBusStops, busSeats) {
-    let Passagers = 0; 
+function getHousesPrototype() {
+    const housesMap = new Map();
 
-    for (let i = 0; i < peopleAtBusStops.length; i++) {
-        Passagers += peopleAtBusStops[i]; 
+    housesMap.set('Apartment 75008', 90);
+    housesMap.set('Apartment 94300', 105);
+    housesMap.set('Apartment 92300', 140);
+    housesMap.set('Apartment 75015', 65);
 
-        if (Passagers >= busSeats) { 
-            return i; 
-        }
-    }
-
-    return -1; 
+    return housesMap;
 }
 
-console.log(fillBus([1, 3, 10, 1], 12)); 
+const houses = getHousesPrototype();
+
+for (const [key, value] of houses) {
+    console.log(`${key} => ${value}`);
+}
