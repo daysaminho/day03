@@ -11,6 +11,4 @@ function getHousesPrototype() {
 
 const houses = getHousesPrototype();
 
-for (const [key, value] of houses) {
-    console.log(`${key} => ${value}`);
-}
+console.log(houses)
