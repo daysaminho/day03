@@ -8,11 +8,10 @@ function findHousing(housingToFind, housingList) {
             
             return [index, housingList[index]];
         }
-        index++;
+        index = index + 1;
     }
 
    
     return null;
 }
-
 
